@@ -1,23 +1,16 @@
 package pe.edu.cibertec.patitas_backend_a.service.impl;
-
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.io.DefaultResourceLoader;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.stereotype.Service;
 import pe.edu.cibertec.patitas_backend_a.dto.LoginRequestDTO;
-<<<<<<< HEAD
 import pe.edu.cibertec.patitas_backend_a.dto.SignOutRequestDTO;
 import pe.edu.cibertec.patitas_backend_a.service.AutenticacionService;
 
 import java.io.*;
-=======
-import pe.edu.cibertec.patitas_backend_a.service.AutenticacionService;
-
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
->>>>>>> 85898a901402d457f624d743735d574219c7ae58
 
 @Service
 public class AutenticacionServiceImpl implements AutenticacionService {
@@ -59,7 +52,6 @@ ResourceLoader resourceLoader;
 
         return datosUsuario;
     }
-<<<<<<< HEAD
     public String CierreSesion(SignOutRequestDTO signOutRequestDTO) throws IOException {
         String nombre_documento = "";
         String codigo = "";
@@ -86,8 +78,5 @@ ResourceLoader resourceLoader;
         }
         return codigo;
     }
-=======
 
-
->>>>>>> 85898a901402d457f624d743735d574219c7ae58
 }

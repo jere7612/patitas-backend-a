@@ -3,13 +3,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import pe.edu.cibertec.patitas_backend_a.dto.LoginRequestDTO;
 import pe.edu.cibertec.patitas_backend_a.dto.LoginResponseDTO;
-<<<<<<< HEAD
 import pe.edu.cibertec.patitas_backend_a.dto.SignOutRequestDTO;
 import pe.edu.cibertec.patitas_backend_a.dto.SignOutResponseDTO;
-=======
->>>>>>> 85898a901402d457f624d743735d574219c7ae58
 import pe.edu.cibertec.patitas_backend_a.service.AutenticacionService;
-import java.io.IOException;
 import java.time.Duration;
 import java.util.Arrays;
 
@@ -24,11 +20,11 @@ public class AutenticacionController {
     public LoginResponseDTO login(@RequestBody LoginRequestDTO loginRequestDTO) {
 
         try {
-<<<<<<< HEAD
+
             //Thread.sleep(Duration.ofSeconds(5));
-=======
+
             Thread.sleep(Duration.ofSeconds(5));
->>>>>>> 85898a901402d457f624d743735d574219c7ae58
+
             String[] datosUsuario = autenticacionService.validarUsuario(loginRequestDTO);
             System.out.println("Resultado: " + Arrays.toString(datosUsuario));
             if (datosUsuario == null) {
@@ -43,7 +39,7 @@ public class AutenticacionController {
 
         }
     }
-<<<<<<< HEAD
+
     @PostMapping("/signout")
     public SignOutResponseDTO CierreSesion(@RequestBody SignOutRequestDTO signOutRequestDTO){
         try {
@@ -60,6 +56,5 @@ public class AutenticacionController {
             return new SignOutResponseDTO("99", "Error");
         }
     }
-=======
->>>>>>> 85898a901402d457f624d743735d574219c7ae58
+
 }

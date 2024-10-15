@@ -1,7 +1,5 @@
 1;44444441;44444441;Jeremias Perez;jeremiasperez@gmail.com
 1;44444442;44444442;Jhonatan Perez;jhonatansperez@gmail.com
-<<<<<<< HEAD
 2;44444441;44444443;Claudia Diaz;claudiadiaz@gmail.com
-=======
 2;44444443;44444443;Claudia Diaz;claudiadiaz@gmail.com
->>>>>>> 85898a901402d457f624d743735d574219c7ae58
+
