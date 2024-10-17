@@ -23,7 +23,7 @@ public class AutenticacionController {
 
             //Thread.sleep(Duration.ofSeconds(5));
 
-            Thread.sleep(Duration.ofSeconds(5));
+
 
             String[] datosUsuario = autenticacionService.validarUsuario(loginRequestDTO);
             System.out.println("Resultado: " + Arrays.toString(datosUsuario));
