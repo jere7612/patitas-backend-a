@@ -22,9 +22,7 @@ public class AutenticacionController {
         try {
 
             //Thread.sleep(Duration.ofSeconds(5));
-
-
-
+            Thread.sleep(5000);
             String[] datosUsuario = autenticacionService.validarUsuario(loginRequestDTO);
             System.out.println("Resultado: " + Arrays.toString(datosUsuario));
             if (datosUsuario == null) {
@@ -43,6 +41,9 @@ public class AutenticacionController {
     @PostMapping("/signout")
     public SignOutResponseDTO CierreSesion(@RequestBody SignOutRequestDTO signOutRequestDTO){
         try {
+
+            //Thread.sleep(Duration.ofSeconds(1));
+            Thread.sleep(5000);
             String codigo = autenticacionService.CierreSesion(signOutRequestDTO);
 
             if (codigo == null){
